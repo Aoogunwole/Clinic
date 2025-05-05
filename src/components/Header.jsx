@@ -1,7 +1,7 @@
 import React from 'react'
 import man from '../assets/man.svg'
 import woman from '../assets/woman.svg'
-import mancli from '../assets/mancli.svg'
+import mancli from '../assets/Mancli.svg'
 import womancli from '../assets/womancli.svg'
 
 const Header = () => {

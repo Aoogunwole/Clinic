@@ -1,5 +1,5 @@
 import React from 'react';
-import mancli from '../assets/mancli.svg'
+import mancli from '../assets/Mancli.svg'
 import womancli from '../assets/womancli.svg'
 
 const ChooseClinic = () => {

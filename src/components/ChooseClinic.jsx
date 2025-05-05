@@ -6,8 +6,8 @@ const ChooseClinic = () => {
   return (
     <div className="bg-gray pb-10">
       {/* Header */}
-      <div className="w-[40%] font-semibold bg-[#2f1b57] text-secondary px-6 py-3 text-lg ">
-        Our Services
+      <div className="md:w-[40%] font-semibold bg-[#2f1b57] text-secondary px-6 py-3 text-lg ">
+        Our clinics
       </div>
 
       {/* Clinic Cards Section */}

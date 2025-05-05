@@ -33,7 +33,7 @@ Don’t let knee pain slow you down—whether it’s arthritis, injury, or chron
 export default function Services() {
   return (
     <div className="bg-white w-full ">
-      <div className="w-[40%] font-semibold bg-[#2f1b57] text-secondary px-6 py-3 text-lg ">
+      <div className="md:w-[40%] font-semibold bg-[#2f1b57] text-secondary px-6 py-3 text-lg ">
         Our Services
       </div>
 

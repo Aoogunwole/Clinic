@@ -2,7 +2,7 @@ import React from 'react';
 import mancli from '../assets/mancli.svg'
 import womancli from '../assets/womancli.svg'
 
-const Clinic = () => {
+const ChooseClinic = () => {
   return (
     <div className="bg-gray pb-10">
       {/* Header */}
@@ -40,4 +40,4 @@ const Clinic = () => {
   );
 };
 
-export default Clinic;
+export default ChooseClinic;

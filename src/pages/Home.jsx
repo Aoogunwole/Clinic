@@ -4,7 +4,7 @@ import AboutUs from '../components/AboutUs'
 import Contact from '../components/Contact'
 import Services from '../components/Services'
 import WhyChooseUs from '../components/WhyChooseUs'
-import Clinic from '../components/clinic'
+import ChooseClinic from '../components/ChooseClinic'
 
 
 const Home = () => {
@@ -15,7 +15,7 @@ const Home = () => {
         <Contact />
         <Services />
         <WhyChooseUs />
-        <Clinic />
+        <ChooseClinic />
     </div>
   )
 }

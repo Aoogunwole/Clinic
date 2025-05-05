@@ -1,0 +1,30 @@
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
+import './App.css';
+import Home from './pages/Home';
+import MenClinic from './pages/MenClinic';
+import WomenClinic from './pages/WomenClinic';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import MessageWidget from './components/MessageWidget';
+
+function App() {
+  return (
+    <Router>
+        <Navbar />
+
+        
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/men-clinic" element={<MenClinic />} />
+          <Route path="/women-clinic" element={<WomenClinic />} />
+        </Routes>
+
+        <Footer />
+
+        <MessageWidget />
+    </Router>
+  );
+}
+
+export default App;

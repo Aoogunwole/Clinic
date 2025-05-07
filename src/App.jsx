@@ -7,8 +7,17 @@ import WomenClinic from './pages/WomenClinic';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import MessageWidget from './components/MessageWidget';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
+
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+  
   return (
     <Router>
         <Navbar />

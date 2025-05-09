@@ -1,13 +1,13 @@
 import React from 'react'
 import WomenHeader from '../components/WomenHeader'
-import WhyYouNeedIt from '../components/WhyYouNeedIt'
 import Contact from '../components/Contact'
+import WomenWhyYouNeedIt from '../components/WomenWhyYouNeedIt'
 
 const WomenClinic = () => {
   return (
     <div>
       <WomenHeader />
-      <WhyYouNeedIt />
+      <WomenWhyYouNeedIt />
       <Contact />
     </div>
   )

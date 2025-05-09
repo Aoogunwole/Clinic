@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-
+// App.js
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import MenClinic from './pages/MenClinic';
@@ -11,27 +11,25 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
-
-
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
-  
+
   return (
     <Router>
-        <Navbar />
-
-        
+      <Navbar />
+      
+      <div className="scroll-smooth">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/men-clinic" element={<MenClinic />} />
           <Route path="/women-clinic" element={<WomenClinic />} />
         </Routes>
+      </div>
 
-        <Footer />
-
-        <MessageWidget />
+      <Footer />
+      <MessageWidget />
     </Router>
   );
 }

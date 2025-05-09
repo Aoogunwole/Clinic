@@ -1,19 +1,20 @@
-import React, { useEffect } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-import man from '../assets/man.svg'
-import woman from '../assets/woman.svg'
-import mancli from '../assets/Mancli.svg'
-import womancli from '../assets/womancli.svg'
+import man from "../assets/man.svg";
+import woman from "../assets/woman.svg";
+import mancli from "../assets/Mancli.svg";
+import womancli from "../assets/womancli.svg";
+import { Link } from "react-scroll";
 
 const Header = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true })
-  }, [])
+    AOS.init({ duration: 1000, once: true });
+  }, []);
 
   return (
-    <div>
+    <div id="home" className="pt-[80px]">
       <div className="bg-gray px-4 md:px-0 md:pl-2 md:pr-4 py-12 rounded-lg">
         <div className="relative grid md:grid-cols-2 items-stretch">
           {/* Left Section */}
@@ -23,18 +24,39 @@ const Header = () => {
           >
             <div className="lg:translate-x-28">
               <h2 className="text-2xl md:text-3xl font-segoe font-bold text-[#1f2937] mb-4">
-                Lorem ipsum non pretium integer amet ultrices tortor egestas ullamcorper.
+                Look Refreshed. Feel Rejuvenated. Love Yourself.
               </h2>
-              <p className="text-[#140320]/50 font-work text-[18px] mb-8 leading-relaxed">
-                Lorem ipsum non pretium integer amet ultrices tortor egestas ullamcorper. Lorem ipsum non pretium integer amet ultrices tortor egestas ullamcorper.
-              </p>
-              <div className="flex gap-4 mb-6" data-aos="zoom-in" data-aos-delay="200">
+              <div className=" mb-8 text-[#140320]/50">
+                <p className=" font-work text-[16px] leading-relaxed">
+                  At Washington Prime Medical Services, we help people look
+                  fresh, feel confident, and glow naturally. Our expert team
+                  uses safe, modern treatments like facials, microneedling, and
+                  advanced skin therapies to smooth, brighten, and renew your
+                  skin. We also offer regenerative care like PRP and stem cell
+                  treatments to boost your body’s natural healing power.
+                </p>
+
+                <p className="font-semibold">
+                  Let’s bring out the best in your skin—gently and effectively.
+                </p>
+              </div>
+
+              <div
+                className="flex gap-4 mb-6"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <Link to="contact" smooth={true} duration={500}>
                 <button className="bg-tertiary hover:bg-[#db2777] text-white font-semibold py-2 md:py-4 px-6 md:px-10 rounded-lg shadow">
-                  Button
+                  Contact us Now !
                 </button>
-                <button className="bg-secondary hover:bg-[#93c5fd] text-[#1f2937] font-semibold py-2 md:py-4 px-6 md:px-10 rounded-lg shadow">
-                  Button
-                </button>
+                </Link>
+
+                <Link to="services" smooth={true} duration={500}>
+                  <button className="bg-secondary hover:bg-[#93c5fd] text-[#1f2937] font-semibold py-2 md:py-4 px-6 md:px-10 rounded-lg shadow">
+                    Explore Our Services
+                  </button>
+                </Link>
               </div>
             </div>
             <img
@@ -47,7 +69,10 @@ const Header = () => {
           </div>
 
           {/* Right Section */}
-          <div className="w-full h-full pl-4 hidden md:block" data-aos="fade-left">
+          <div
+            className="w-full h-full pl-4 hidden md:block"
+            data-aos="fade-left"
+          >
             <img
               src={man}
               alt="Face mask"
@@ -74,7 +99,7 @@ const Header = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

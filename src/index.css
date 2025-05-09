@@ -11,3 +11,12 @@
 
 }
 
+/* Ensure sections don't get hidden under the navbar */
+#home, #about-us, #services, #clinics {
+  scroll-margin-top: 80px; /* Adjust based on the height of the navbar */
+}
+
+/* Optional: Additional padding to ensure sections don't stick to the top */
+section {
+  padding-top: 80px; /* Same height as navbar to avoid covering */
+}

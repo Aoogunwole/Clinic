@@ -34,7 +34,7 @@ const staggerContainer = {
 
 const WhyChooseUs = () => {
   return (
-    <div className="relative bg-gray px-4 pb-24 md:pb-32">
+    <div className="relative bg-gray px-4 pb-14 md:pb-32">
       <div className="max-w-[1600px] mx-auto">
         {/* Title */}
         <div
@@ -56,10 +56,10 @@ const WhyChooseUs = () => {
             variants={staggerContainer}
             className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center lg:hidden"
           >
-            <Card number="01" title="Men Clinic" variant={fromBottom} />
-            <Card number="02" title="Women Clinic" variant={fromBottom} />
-            <Card number="03" title="Child Care" variant={fromBottom} />
-            <Card number="04" title="Specialists" variant={fromBottom} />
+            <Card number="01" title="Men Clinic" variant={fromBottom} des="At Washington Prime, we tailor every treatment to your unique skin, health goals, and lifestyle—no matter your gender or background." />
+            <Card number="02" title="Women Clinic" variant={fromBottom} des="At Washington Prime, we tailor every treatment to your unique skin, health goals, and lifestyle—no matter your gender or background." />
+            <Card number="03" title="Child Care" variant={fromBottom} des="Your comfort and privacy are our priority. Our space is welcoming, inclusive, and designed to make you feel at ease from the moment you arrive."/>
+            <Card number="04" title="Specialists" variant={fromBottom} des="Our experienced team combines medical knowledge with aesthetic care to deliver real results that help you feel confident, healthy, and renewed."/>
           </motion.div>
 
           {/* Desktop Layout */}
@@ -83,7 +83,7 @@ const WhyChooseUs = () => {
   
               className="absolute top-[5%] left-[16%] z-20"
             >
-              <Card number="01" title="Men Clinic" />
+              <Card number="01" title="Personalized Treatments for Every Body" des="At Washington Prime, we tailor every treatment to your unique skin, health goals, and lifestyle—no matter your gender or background." />
             </motion.div>
 
             <motion.div
@@ -93,7 +93,7 @@ const WhyChooseUs = () => {
   
               className="absolute top-[5%] right-[16%] z-20"
             >
-              <Card number="02" title="Women Clinic" />
+              <Card number="02" title="Comfortable and Confidential Environment" des="Your comfort and privacy are our priority. Our space is welcoming, inclusive, and designed to make you feel at ease from the moment you arrive." />
             </motion.div>
 
             <motion.div
@@ -103,7 +103,7 @@ const WhyChooseUs = () => {
   
               className="absolute bottom-[-10%] left-[16%] z-20"
             >
-              <Card number="03" title="Child Care" />
+              <Card number="03" title="Modern, Non-Invasive Technology" des="We use the latest in regenerative medicine and skincare technology to ensure safe, effective results with minimal downtime." />
             </motion.div>
 
             <motion.div
@@ -113,7 +113,7 @@ const WhyChooseUs = () => {
   
               className="absolute bottom-[-10%] right-[16%] z-20"
             >
-              <Card number="04" title="Specialists" />
+              <Card number="04" title="Trusted Experts in Skin and Wellness" des="Our experienced team combines medical knowledge with aesthetic care to deliver real results that help you feel confident, healthy, and renewed." />
             </motion.div>
           </div>
         </div>
@@ -122,7 +122,7 @@ const WhyChooseUs = () => {
   );
 };
 
-const Card = ({ number, title, variant = fromBottom }) => (
+const Card = ({ number, title, variant = fromBottom, des }) => (
   <motion.div
     variants={variant}
     className="bg-[#2D0B5C] text-white rounded-br-[30px] p-6 md:p-8 w-[340px] relative shadow-2xl"
@@ -130,12 +130,11 @@ const Card = ({ number, title, variant = fromBottom }) => (
     <div className="absolute -top-6 -left-6 bg-white text-black text-xl font-bold rounded-bl-[20px] rounded-br-[20px] px-5 py-2 shadow">
       {number}
     </div>
-    <h3 className="text-tertiary font-segoe font-semibold text-xl mb-3">
+    <h3 className="text-tertiary font-segoe font-semibold text-lg mb-3">
       {title}
     </h3>
-    <p className="text-base text-[18px] font-work font-[300] text-[#AEC7E8] leading-relaxed text-justify">
-      Lorem ipsum dolor sit amet consectetur. Lacus consectetur imperdiet amet
-      proin morbi hac. At tristique tempus fusce id enim sapien vulputate.
+    <p className="text-base text-[15px] font-work font-[300] text-[#AEC7E8] leading-relaxed text-justify">
+      {des}
     </p>
   </motion.div>
 );
